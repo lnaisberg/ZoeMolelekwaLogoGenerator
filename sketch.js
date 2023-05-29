@@ -190,7 +190,7 @@ function draw() {
 
 function resetVars() {
   sizeT = 0.1 * windowWidth;
-  strW = width / 400;
+  strW = width / 300;
   exportCanvas.strokeWeight(strW);
   exportCanvas.textSize(sizeT);
   y = (exportCanvas.height * 3) / 4;
