@@ -302,7 +302,7 @@ how to remove the virtical space around the range input in IE*/
 /*   height:300px; */
 }
 
-@media screen and (max-width: 660px) {
+@media (max-width: 660px) {
   #toolbar{
     width: calc(100vw - 60px);
     margin: 20px;
