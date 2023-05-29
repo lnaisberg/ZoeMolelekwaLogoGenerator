@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js"></script>
+    <!--script src="https://unpkg.com/p5.touchgui@0.5.2/lib/p5.touchgui.js"></script-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    <div id="toolbar" >
+      <div id="shape">
+        <h3>Shape</h3>
+        <p>x-axis</p>
+        <input type="range" id="xSlider" oninput="updateX(this.value);">
+        <p>y-axis</p>
+        <input type="range" id="ySlider" oninput="updateY(this.value);">
+        <p>wave range</p>
+        <input type="range" id="rSlider" oninput="updateR(this.value);">
+      </div>
+      <div id="typeColor">
+        <h3>Color</h3>
+        <p>fill</p>
+        <div id="typeFill">
+          <button type="button" class="button colorBtn" id="BNW"></button>
+          <button type="button" class="button colorBtn" id="Green"></button>
+          <button type="button" class="button colorBtn" id="Yellow"></button>
+          <button type="button" class="button colorBtn" id="Brown"></button>
+          <button type="button" class="button colorBtn" id="White"></button>
+          <button type="button" class="button colorBtn" id="Colorful"></button>
+        </div>
+        <p>stroke</p>
+        <div>
+          <button type="button" class="button colorBtn" id="Stroke"></button>
+          <button type="button" class="button colorBtn" id="removeStroke"></button>
+        </div>
+      </div>
+      <div>
+        <button type="button" class="button textBtn" id="downloadBtn">
+          Download
+        </button>
+      </div>
+    </div>
+<!--     <div id="wordmark"></div> -->
+    <script src="sketch.js"></script>
+  </body>
+</html>
