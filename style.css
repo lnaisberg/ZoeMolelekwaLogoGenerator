@@ -1,7 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  font-family: Poppins, 'Poppins', sans-serif;
+  font-family: Satoshi, 'Satoshi', sans-serif;
 }
 canvas {
   display: block;
@@ -290,7 +290,8 @@ how to remove the virtical space around the range input in IE*/
   height:30px;
   border-radius: 20px;
   background-color:#ffffff80;
-  padding-top: 3px;
+  padding-top: 0.4rem;
+  font-family: Satoshi, 'Satoshi', sans-serif;
 }
 
 #downloadBtn:hover{

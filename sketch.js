@@ -37,9 +37,7 @@ let blackCol = "#000000"
 
 function preload() {
   myFont = loadFont("assets/PassionOne-Black.ttf");
-  sliderFont = "Helvetica";
-  //BNWImage = loadImage("assets/BNW_button.png");
-  //colorfulImage = loadImage("assets/colorful_button.png");
+  sliderFont = loadFont("assets/Satoshi-Regular.ttf");
 }
 
 function setup() {
