@@ -31,6 +31,7 @@ let brownCol = "#D7C9B4";
 let whiteCol = "#ffffff";
 let blackCol = "#222222";
 let strokeCol = "#222222";
+let noStroke = "#00000000";
 
 //---------------------------
 
@@ -234,7 +235,7 @@ function setKerning(i) {
 function makeBNW() {
   blackKey = true;
   for (let i = 0; i < letters.length; i++) {
-    letters[i].strCol = color(strokeCol);
+    letters[i].strCol = color(noStroke);
     letters[i].fillCol = color(whiteCol);
     if (strokeOn) {
       //letters[i].strCol = color('#000000');
@@ -246,7 +247,7 @@ function makeBNW() {
 function makeGreen() {
   blackKey = false;
   for (let i = 0; i < letters.length; i++) {
-    letters[i].strCol = color(strokeCol);
+    letters[i].strCol = color(noStroke);
     letters[i].fillCol = color(greenCol);
     if (strokeOn) {
       letters[i].strCol = color(blackCol);
@@ -257,7 +258,7 @@ function makeGreen() {
 function makeYellow() {
   blackKey = false;
   for (let i = 0; i < letters.length; i++) {
-    letters[i].strCol = color(strokeCol);
+    letters[i].strCol = color(noStroke);
     letters[i].fillCol = color(yellowCol);
     if (strokeOn) {
       letters[i].strCol = color(blackCol);
@@ -268,7 +269,7 @@ function makeYellow() {
 function makeBrown() {
   blackKey = false;
   for (let i = 0; i < letters.length; i++) {
-    letters[i].strCol = color(strokeCol);
+    letters[i].strCol = color(noStroke);
     letters[i].fillCol = color(brownCol);
     if (strokeOn) {
       letters[i].strCol = color(blackCol);
@@ -279,7 +280,7 @@ function makeBrown() {
 function makeWhite() {
   blackKey = false;
   for (let i = 0; i < letters.length; i++) {
-    letters[i].strCol = color(strokeCol);
+    letters[i].strCol = color(noStroke);
     letters[i].fillCol = color(whiteCol);
     if (strokeOn) {
       letters[i].strCol = color(blackCol);
@@ -291,7 +292,7 @@ function makeColorful() {
   blackKey = false;
   let counter = 0;
   for (let i = 0; i < letters.length; i++) {
-    letters[i].strCol = color(strokeCol);
+    letters[i].strCol = color(noStroke);
     if(counter == 0){
       letters[i].fillCol = color(greenCol);
       counter ++;
@@ -322,7 +323,7 @@ function removeStroke() {
   strokeOn = false;
   bg = 150;
   for (let i = 0; i < letters.length; i++) {
-    letters[i].strCol = color(strokeCol);
+    letters[i].strCol = color(noStroke);
     if (blackKey) {
       letters[i].blackKey();
     }
@@ -351,7 +352,7 @@ class Letter {
       if (strokeOn) {
         this.strCol = 255;
       } else {
-        this.strCol = color(strokeCol);
+        this.strCol = color(noStroke);
       }
     } else {
       this.fillCol = 255;
@@ -359,7 +360,7 @@ class Letter {
       if (strokeOn) {
         this.strCol = 0;
       } else {
-        this.strCol = color(strokeCol);
+        this.strCol = color(noStroke);
       }
     }
   }
