@@ -321,7 +321,7 @@ function addStroke() {
 
 function removeStroke() {
   strokeOn = false;
-  bg = 150;
+  //bg = 150;
   for (let i = 0; i < letters.length; i++) {
     letters[i].strCol = color(noStroke);
     if (blackKey) {
